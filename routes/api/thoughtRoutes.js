@@ -1,3 +1,10 @@
+// Routes //
+// Adding a router variable is an instance of the Express router, which allows you to define routes //
+//  apiRoutes variable likely imports another router instance that handles the API routes for your application //
+
+// Adding router variable is an instance of the Express router //
+// he require('../../controllers/thoughtController') imports an object that contains functions for handling different operations related to thoughts and reactions //
+
 const router = require('express').Router();
 const {
   getThoughts,
