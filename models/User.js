@@ -1,3 +1,17 @@
+// The require statement imports the necessary modules: mongoose //
+// The Schema and model objects are destructured from the mongoose module //
+// Schema is defined using new Schema(), representing the user document structure //
+// username: A required string field representing the username of the user //
+// email: A required string field representing the email of the user //
+// thoughts: An array field that holds Thought document references //
+// Schema.Types.ObjectId and is associated with the Thought model //
+// friends: An array field that holds User document references //
+// Schema.Types.ObjectId and is associated with the User model //
+// id: false disables the generation of an id virtual property for the schema //
+// friendCount is added to the schema using userSchema.virtual() //
+// It defines a getter function that returns the length of the friends array //
+// User model is created using model('user', userSchema), where 'user' is the name of the model and userSchema is the defined schema //
+
 const { Schema, model } = require('mongoose');
 
 
