@@ -1,3 +1,13 @@
+// Adding Schema and Types objects are imported from the mongoose package //
+// The dayjs library is imported for date manipulation and formatting //
+// Adding advancedFormat plugin from dayjs is imported to enhance date formatting capabilities //
+// Adding reactionSchema variable defines a new Schema using new Schema() //
+// Adding reactionBody: A required string field representing the reaction body //
+// username: A required string field representing the username associated with the reaction //
+// createdAt: A date field representing the creation timestamp of the reaction //
+// dateNow function is defined, which takes a createdAt date value and formats it using dayjs into the format "MMMM Do, YYYY at H:mm a" //
+
+
 const { Schema, Types } = require('mongoose');
 const dayjs = require('dayjs');
 
